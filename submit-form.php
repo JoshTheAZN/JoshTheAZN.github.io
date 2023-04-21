@@ -14,22 +14,14 @@ if(isset($_POST['Submit'])) {
     $headers .= "Reply-To: $email" . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
-    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-    // Validate the email input using FILTER_VALIDATE_EMAIL
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      // Invalid email address
-      echo "Invalid email address";
-    } else {
-      // Valid email address
-      // Send email or process the form data
           // Send email
     if(mail($to, $subject, $message, $headers)) {
         echo "Thank you for your message!";
     } else {
         echo "Sorry, there was an error sending your message. Please try again later.";
     }
-    }
+    
 
 
 }
