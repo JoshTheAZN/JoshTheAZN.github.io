@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Production Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<!-- Logo and navigation menu -->
+		<nav>
+			<ul>
+				<li><a href="#tracks">Tracks</a></li>
+				<li><a href="#videos">Videos</a></li>
+				<li><a href="#bio">Bio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="intro">
+			<!-- Introductory section with a background image or video -->
+			<h1>Welcome to Josh The AZN's Portfolio</h1>
+			<p>Here you'll find some of my latest tracks and videos, as well as a bit about me and my background in music production.</p>
+			<a href="https://www.youtube.com/channel/UCcaAn7B20qyKhHPbKSZBzRA" target="_blank"><button>Listen Now</button></a>
+		</section>
+		
+		<section id="tracks">
+			<!-- Music tracks with audio players and descriptions -->
+			<h2>Tracks</h2>
+			<ul>
+				<li>
+					<audio controls>
+						<source src="sounds/idea38.mp3" type="audio/mp3">
+						<source src="sounds/Idea38.ogg" type="audio/ogg">
+					</audio>
+					<h3>Time Flows</h3>
+					<p>This future bounce track uses a vocal samples from "Wish of a Songbird" by popular vTuber, Enna Allouette!</p>
+				</li>
+				<li>
+					<audio controls>
+						<source src="sounds/GothicHardstyle.mp3" type="audio/mp3">
+						<source src="sounds/GothicHardstyle.ogg" type="audio/ogg">
+					</audio>
+					<h3>Fated</h3>
+					<p>Hardcore style leads over gothic-type chords! Gothic-hardcore turns out to be very powerful.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section id="videos">
+			<!-- Videos with embedded players and descriptions -->
+			<h2>Videos</h2>
+			<ul>
+				<li>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_CWwOQ6CPEE" frameborder="0" allowfullscreen></iframe>
+					<h3>EEEAAAOOO (Meowsynth remix)</h3>
+					<p>A remix of popular song by Patricia Taxxon, using a Meowsynth plugin. My most viral video to date!</p>
+				</li>
+				<li>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/FY2R5l6Qezw" frameborder="0" allowfullscreen></iframe>
+					<h3>Mess of Calamity</h3>
+					<p>Hardstyle leads over Gothic chord patterns, with a touch of dubstep.</p>
+				</li>
+			</ul>
+		</section>
+		
+		<section id="bio">
+			<!-- Bio and personal statement -->
+			<h2>About Me</h2>
+			<img src="images/logo.png" alt="Profile Picture" width="20%" height="20%">
+			<p>Hi there! My name is Josh The AZN and I'm a music producer based in the United States. I've been making music for four years and specialize in EDM (Electronic Dance Music). Some of my biggest influences include Camellia, CS4W, and the talents in Hardcore Tano*C.</p>
+			<p>When I'm not making music, I love playing Valorant and Beatboxing. Feel free to reach out and connect with me!
+		</section>
+
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<form action="submit-form.php" method="post">
+			  <label for="name">Name:</label>
+			  <input type="text" id="name" name="name" required>
+			  
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" required>
+			  
+			  <label for="subject">Subject:</label>
+			  <input type="text" id="subject" name="subject" required>
+			  
+			  <label for="message">Message:</label>
+			  <textarea id="message" name="message" required></textarea>
+			  
+			  <input type="submit" value="Submit">
+			</form>
+		  </section>
+
+	</main>
+</body>
